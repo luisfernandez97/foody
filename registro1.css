@@ -1,0 +1,266 @@
+body {
+  margin: 0;
+  line-height: normal;
+}
+.popup-overlay {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+.la-mejor-forma2 {
+  display: block;
+}
+.la-mejor-forma-container5 {
+  line-break: anywhere;
+  width: 100%;
+}
+.la-mejor-forma-container4 {
+  margin: 0;
+  position: absolute;
+  bottom: 135px;
+  left: 108px;
+  line-height: 40px;
+  font-weight: 700;
+  display: flex;
+  align-items: flex-end;
+  width: 497px;
+}
+.inicio-de-sesin5 {
+  position: absolute;
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 710px;
+  overflow: hidden;
+  background-image: url(./public/1-inicio-de-sesin1@3x.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  text-align: left;
+  font-size: var(--poppins-bold-text-4xl-size);
+  color: var(--foundation-violet-violet-500);
+}
+.registrarme {
+  margin: 0;
+  position: relative;
+  font-size: inherit;
+  line-height: 20px;
+  font-weight: 700;
+  font-family: inherit;
+}
+.registrarme-wrapper {
+  border-radius: var(--br-sm) var(--br-sm) var(--br-sm) var(--br-3xs);
+  background-color: var(--foundation-violet-violet-500);
+  display: flex;
+  flex-direction: row;
+  padding: var(--padding-5xs) var(--padding-2xs);
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.crea-tu-cuenta {
+  margin: 0;
+  align-self: stretch;
+  position: relative;
+  font-size: var(--poppins-bold-text-3xl-size);
+  line-height: 36px;
+  font-weight: 700;
+  color: var(--foundation-neutral-neutral-black);
+  text-align: left;
+}
+.frame-parent7 {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-xs);
+}
+.special-inputs2 {
+  background-color: var(--white);
+  flex-direction: row;
+  padding: var(--padding-2xs);
+  align-items: center;
+  gap: var(--gap-xs);
+}
+.phone-input2,
+.phone-input3,
+.special-inputs2,
+.special-inputs3 {
+  overflow: hidden;
+  display: flex;
+  justify-content: flex-start;
+}
+.special-inputs3 {
+  border: 0;
+  font-family: var(--poppins-regular-text-lg);
+  font-size: var(--poppins-bold-text-sm-size);
+  background-color: var(--white);
+  flex: 1;
+  flex-direction: row;
+  padding: var(--padding-2xs);
+  align-items: center;
+}
+.phone-input2,
+.phone-input3 {
+  align-self: stretch;
+  align-items: flex-start;
+}
+.phone-input3 {
+  border-radius: var(--br-2xs);
+  border: 1px solid var(--slate-300);
+  flex-direction: row;
+}
+.phone-input2 {
+  flex-direction: column;
+}
+.cmo-quieres-verificar {
+  margin: 0;
+  align-self: stretch;
+  position: relative;
+  line-height: 20px;
+}
+.text21 {
+  position: relative;
+  font-size: var(--poppins-regular-text-base-size);
+  line-height: 24px;
+  font-family: var(--poppins-regular-text-lg);
+  color: var(--white);
+  text-align: left;
+}
+.button15 {
+  cursor: pointer;
+  border: 0;
+  padding: var(--padding-4xs) var(--padding-md);
+  background-color: var(--foundation-violet-violet-500);
+  flex: 1;
+  border-radius: var(--br-2xs);
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.button-container,
+.frame-parent6,
+.phone-input-group {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.button-container {
+  align-self: stretch;
+  flex-direction: row;
+  gap: var(--gap-xs);
+}
+.frame-parent6,
+.phone-input-group {
+  flex-direction: column;
+  gap: var(--gap-xl);
+}
+.phone-input-group {
+  align-self: stretch;
+  color: var(--neutral-800);
+  font-family: var(--source-sans-pro-bold-text-sm);
+}
+.frame-parent6 {
+  position: absolute;
+  top: 148px;
+  left: 834px;
+  border-radius: var(--br-lg);
+  background-color: var(--white);
+  box-shadow: var(--branding-green-shade);
+  border: 1px solid var(--white);
+  box-sizing: border-box;
+  width: 394px;
+  padding: var(--padding-lg) var(--padding-xl);
+}
+.heroicons-solidarrow-left4,
+.logo-foody-v200-icon4 {
+  position: relative;
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+  overflow: hidden;
+}
+.logo-foody-v200-icon4 {
+  width: 122.02px;
+  height: 45px;
+  cursor: pointer;
+}
+.heroicons-solidarrow-left-parent2 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: var(--gap-md);
+}
+.registro-inner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 710px;
+  display: flex;
+  flex-direction: column;
+  padding: var(--padding-sm) var(--padding-4xl) var(--padding-sm)
+    var(--padding-3xl);
+  box-sizing: border-box;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.text23,
+.tienes-cuenta1 {
+  position: relative;
+  line-height: 20px;
+}
+.tienes-cuenta1 {
+  align-self: stretch;
+}
+.text23 {
+  font-size: var(--poppins-bold-text-sm-size);
+  font-family: var(--poppins-regular-text-lg);
+  color: var(--white);
+  text-align: center;
+}
+.button17 {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  border-radius: var(--br-2xs);
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+}
+.tienes-cuenta-group {
+  position: absolute;
+  top: 32px;
+  left: 1217px;
+  width: 115px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.registro {
+  position: relative;
+  background: linear-gradient(138.35deg, #62279d, #8d3694);
+  width: 100%;
+  height: 687px;
+  overflow: hidden;
+  text-align: center;
+  font-size: var(--poppins-bold-text-sm-size);
+  color: var(--white);
+  font-family: var(--poppins-regular-text-lg);
+}
+@media screen and (max-width: 1200px) {
+  .registro {
+    width: 100%;
+  }
+}

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <link rel="stylesheet" href="./global.css" />
+    <link rel="stylesheet" href="./modal-address-sucess.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Source Sans Pro:wght@400;700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Neuron:wght@400;800&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap"
+    />
+  </head>
+  <body>
+    <div class="modal-address-sucess">
+      <div class="column-container31">
+        <img class="img-icon14" alt="" src="public/img14@2x.png" />
+        <div class="column-container32">
+          <h2 class="direccin-aadida-con">¡Dirección añadida con éxito!</h2>
+          <p class="empieza-a-ordenar">
+            Empieza a ordenar comida saludable a tu domicilio.
+          </p>
+        </div>
+      </div>
+      <div class="row-container31">
+        <button class="button32" id="popupbutton">
+          <b class="text40">Aceptar</b>
+        </button>
+      </div>
+      <img
+        class="heroicons-minix-mark5"
+        alt=""
+        src="public/heroiconsminixmark.svg"
+      />
+    </div>
+
+    <script>
+      var popupbutton = document.getElementById("popupbutton");
+      if (popupbutton) {
+        popupbutton.addEventListener("click", function (e) {
+          var popup = e.currentTarget.parentNode;
+          function isOverlay(node) {
+            return !!(
+              node &&
+              node.classList &&
+              node.classList.contains("popup-overlay")
+            );
+          }
+          while (popup && !isOverlay(popup)) {
+            popup = popup.parentNode;
+          }
+          if (isOverlay(popup)) {
+            popup.style.display = "none";
+          }
+        });
+      }
+      </script>
+  </body>
+</html>

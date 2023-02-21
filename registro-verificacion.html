@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <link rel="stylesheet" href="./global.css" />
+    <link rel="stylesheet" href="./registro-verificacion1.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Source Sans Pro:wght@400;700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Neuron:wght@400;800&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap"
+    />
+  </head>
+  <body>
+    <main class="registro-verificacion">
+      <div class="frame-parent2">
+        <div class="no-has-recibido-ningn-cdigo-parent">
+          <div class="hemos-enviado-un-cdigo-a-parent">
+            <p class="hemos-enviado-un">Hemos enviado un código a:</p>
+            <div class="input-text2"><p class="text11">57 321 1234567</p></div>
+          </div>
+          <div class="no-es-tu-nmero-de-celular-parent">
+            <p class="no-es-tu">¿No es tu número de celular?</p>
+            <button class="button7" id="button">
+              <b class="text12">Cambiar</b>
+            </button>
+          </div>
+        </div>
+        <div class="code-parent">
+          <div class="code">
+            <input
+              class="numeric-input"
+              type="number"
+              min="{1}"
+              max="{1}"
+              required
+              autofocus
+            /><input
+              class="numeric-input"
+              type="number"
+              min="{1}"
+              max="{1}"
+              required
+              autofocus
+            /><input
+              class="numeric-input"
+              type="number"
+              min="{1}"
+              max="{1}"
+              required
+              autofocus
+            /><input
+              class="numeric-input"
+              type="number"
+              min="{1}"
+              max="{1}"
+              required
+              autofocus
+            />
+          </div>
+          <button class="button8" id="button1">
+            <b class="text13">Verificar</b>
+          </button>
+        </div>
+        <div class="no-has-recibido-ningn-cdigo-parent">
+          <p class="hemos-enviado-un">¿No has recibido ningún código?</p>
+          <button class="button7" id="button2">
+            <b class="text12">Reenviar código</b>
+          </button>
+        </div>
+      </div>
+      <div class="inicio-de-sesin3">
+        <p class="la-mejor-forma-container2">
+          <span class="la-mejor-forma-container3"
+            ><span class="la-mejor-forma1"
+              >La mejor forma de predecir el futuro, </span
+            ><span class="la-mejor-forma1">es creándolo</span></span
+          >
+        </p>
+        <div class="inicio-de-sesin-child">
+          <div class="heroicons-solidarrow-left-container">
+            <img
+              class="heroicons-solidarrow-left2"
+              alt=""
+              src="public/heroiconssolidarrowleft1.svg"
+            /><img
+              class="logo-foody-v200-icon2"
+              alt="Logo Food"
+              src="public/logo-foody-v2002.svg"
+              id="logoFoodyV200Image"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="tienes-cuenta-parent">
+        <p class="hemos-enviado-un">¿Tienes cuenta?</p>
+        <button class="button10" id="button3">
+          <b class="text15">Iniciar sesión</b>
+        </button>
+      </div>
+    </main>
+
+    <div id="modalResendPopup" class="popup-overlay" style="display: none">
+      <div class="modalresend">
+        <p class="cdigo-reenviado">Código reenviado!</p>
+        <p class="sabemos-que-eres">
+          Sabemos que eres real, pero necesitamos verificarlo...
+        </p>
+        <div class="modalresend-child"></div>
+      </div>
+    </div>
+
+    <script>
+      var button = document.getElementById("button");
+      if (button) {
+        button.addEventListener("click", function (e) {
+          window.location.href = "./registro.html";
+        });
+      }
+      
+      var button1 = document.getElementById("button1");
+      if (button1) {
+        button1.addEventListener("click", function (e) {
+          window.location.href = "./registro-de-datos.html";
+        });
+      }
+      
+      var button2 = document.getElementById("button2");
+      if (button2) {
+        button2.addEventListener("click", function () {
+          var popup = document.getElementById("modalResendPopup");
+          if (!popup) return;
+          var popupStyle = popup.style;
+          if (popupStyle) {
+            popupStyle.display = "flex";
+            popupStyle.zIndex = 100;
+            popupStyle.backgroundColor = "rgba(113, 113, 113, 0.3)";
+            popupStyle.alignItems = "flex-end";
+            popupStyle.justifyContent = "";
+          }
+          popup.setAttribute("closable", "");
+      
+          var onClick =
+            popup.onClick ||
+            function (e) {
+              if (e.target === popup && popup.hasAttribute("closable")) {
+                popupStyle.display = "none";
+              }
+            };
+          popup.addEventListener("click", onClick);
+        });
+      }
+      
+      var logoFoodyV200Image = document.getElementById("logoFoodyV200Image");
+      if (logoFoodyV200Image) {
+        logoFoodyV200Image.addEventListener("click", function () {
+          window.open("https://www.foody.com.co/");
+        });
+      }
+      
+      var button3 = document.getElementById("button3");
+      if (button3) {
+        button3.addEventListener("click", function (e) {
+          window.location.href = "/";
+        });
+      }
+      </script>
+  </body>
+</html>

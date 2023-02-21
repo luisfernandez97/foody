@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <link rel="stylesheet" href="./global.css" />
+    <link rel="stylesheet" href="./index.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Source Sans Pro:wght@400;700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Neuron:wght@400;800&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap"
+    />
+  </head>
+  <body>
+    <main class="iniciar-sesion" id="main">
+      <div class="inicio-de-sesin">
+        <p class="comer-bien-nunca-container">
+          <span class="comer-bien">¡Comer bien </span
+          ><span class="comer-bien">nunca fue tan fácil!</span>
+        </p>
+      </div>
+      <div class="frame-parent">
+        <div class="frame-group">
+          <div class="inicio-de-sesin-wrapper">
+            <h1 class="inicio-de-sesin1">Inicio de sesión</h1>
+          </div>
+          <p class="bienvenido-de-vuelta">Bienvenido de vuelta</p>
+        </div>
+        <form class="phone-input-parent">
+          <div class="phone-input">
+            <div class="phone-input1">
+              <select class="special-inputs" required>
+                <option value="+57">+57</option>
+                <option value="+58">+58</option></select
+              ><input
+                class="special-inputs1"
+                type="tel"
+                placeholder="Ej. 321 123456"
+                maxlength="{10}"
+                minlength="{10}"
+                required
+                autofocus
+                autocomplete="on"
+              />
+            </div>
+          </div>
+          <div class="button-parent">
+            <button class="button" id="button">
+              <b class="text">WhatsApp</b></button
+            ><button class="button" id="button1">
+              <b class="text">SMS</b>
+            </button>
+          </div>
+        </form>
+        <button class="heroicons-outlineenvelope-parent" id="frameButton">
+          <img
+            class="heroicons-outlineenvelope"
+            alt=""
+            src="public/heroiconsoutlineenvelope.svg"
+          />
+          <div class="sin-telfono-parent">
+            <p class="sin-telfono">¿Sin teléfono?</p>
+            <p class="ingresa-con-tu">Ingresa con tu correo</p>
+          </div>
+          <img
+            class="heroicons-outlineenvelope"
+            alt=""
+            src="public/heroiconssolidarrowright.svg"
+          />
+        </button>
+      </div>
+      <div class="iniciar-sesion-inner">
+        <div class="frame-wrapper">
+          <div class="heroicons-solidarrow-left-parent">
+            <img
+              class="heroicons-outlineenvelope"
+              alt=""
+              src="public/heroiconssolidarrowleft.svg"
+            /><img
+              class="logo-foody-v200-icon"
+              alt="Foody logo"
+              loading="lazy"
+              src="public/logo-foody-v200.svg"
+              id="logoFoodyV200Image"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="no-tienes-cuenta-parent">
+        <p class="no-tienes-cuenta">¿No tienes cuenta?</p>
+        <a class="button2" href="./registro.html" id="button2"
+          ><b class="text2">Registrarme ahora</b></a
+        >
+      </div>
+    </main>
+
+    <script>
+      var button = document.getElementById("button");
+      if (button) {
+        button.addEventListener("click", function (e) {
+          window.location.href = "./verificacion.html";
+        });
+      }
+      
+      var button1 = document.getElementById("button1");
+      if (button1) {
+        button1.addEventListener("click", function (e) {
+          window.location.href = "./verificacion.html";
+        });
+      }
+      
+      var frameButton = document.getElementById("frameButton");
+      if (frameButton) {
+        frameButton.addEventListener("click", function (e) {
+          // Please sync "1. Inicio de sesión" to the project
+        });
+      }
+      
+      var logoFoodyV200Image = document.getElementById("logoFoodyV200Image");
+      if (logoFoodyV200Image) {
+        logoFoodyV200Image.addEventListener("click", function () {
+          window.location.href = "https://www.foody.com.co/";
+        });
+      }
+      
+      var button2 = document.getElementById("button2");
+      if (button2) {
+        button2.addEventListener("click", function (e) {
+          window.location.href = "./registro.html";
+        });
+      }
+      </script>
+  </body>
+</html>

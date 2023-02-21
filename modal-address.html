@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <link rel="stylesheet" href="./global.css" />
+    <link rel="stylesheet" href="./modal-address.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Source Sans Pro:wght@400;700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Neuron:wght@400;800&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap"
+    />
+  </head>
+  <body>
+    <div class="modal-address">
+      <div class="container-group">
+        <div class="container2">
+          <h2 class="tus-direcciones">Tus direcciones</h2>
+        </div>
+        <div class="listado-de-direcciones1">
+          <div class="radio-input-container">
+            <input class="input-check3" type="radio" />
+            <div class="column-container5">
+              <b class="text29">Trabajo</b>
+              <div class="ak-9-100">Parque de la 93, Bogotá, Colombia</div>
+            </div>
+          </div>
+          <div class="radio-input-container1">
+            <input class="input-check4" type="radio" />
+            <div class="column-container5">
+              <b class="text29">Casa</b>
+              <div class="ak-9-100">Calle 19b #3bis este 23</div>
+            </div>
+          </div>
+          <button class="button23">
+            <img
+              class="heroicons-miniplus1"
+              alt=""
+              src="public/heroiconsminiplus.svg"
+            /><b class="text31">Añadir nueva</b>
+          </button>
+        </div>
+      </div>
+      <div class="row-container5">
+        <button class="button24" id="popupbutton1">
+          <b class="text32">Aceptar</b>
+        </button>
+      </div>
+      <img
+        class="heroicons-minix-mark2"
+        alt=""
+        src="public/heroiconsminixmark.svg"
+        id="popupheroiconsMinixMark"
+      />
+    </div>
+
+    <script>
+      var popupbutton1 = document.getElementById("popupbutton1");
+      if (popupbutton1) {
+        popupbutton1.addEventListener("click", function (e) {
+          var popup = e.currentTarget.parentNode;
+          function isOverlay(node) {
+            return !!(
+              node &&
+              node.classList &&
+              node.classList.contains("popup-overlay")
+            );
+          }
+          while (popup && !isOverlay(popup)) {
+            popup = popup.parentNode;
+          }
+          if (isOverlay(popup)) {
+            popup.style.display = "none";
+          }
+        });
+      }
+      
+      var popupheroiconsMinixMark = document.getElementById(
+        "popupheroiconsMinixMark"
+      );
+      if (popupheroiconsMinixMark) {
+        popupheroiconsMinixMark.addEventListener("click", function (e) {
+          var popup = e.currentTarget.parentNode;
+          function isOverlay(node) {
+            return !!(
+              node &&
+              node.classList &&
+              node.classList.contains("popup-overlay")
+            );
+          }
+          while (popup && !isOverlay(popup)) {
+            popup = popup.parentNode;
+          }
+          if (isOverlay(popup)) {
+            popup.style.display = "none";
+          }
+        });
+      }
+      </script>
+  </body>
+</html>

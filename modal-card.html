@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <link rel="stylesheet" href="./global.css" />
+    <link rel="stylesheet" href="./modal-card.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Source Sans Pro:wght@400;700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Neuron:wght@400;800&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap"
+    />
+  </head>
+  <body>
+    <div class="modal-card">
+      <div class="container-parent">
+        <div class="container1"><h2 class="tus-tarjetas">Tus tarjetas</h2></div>
+        <div class="listado-de-direcciones">
+          <div class="radio-input-container-card">
+            <input class="input-check1" type="radio" />
+            <div class="card-container">
+              <img class="image-40-icon" alt="" src="public/image-40@2x.png" />
+              <div class="column-container2">
+                <p class="terminada-en-5400">Terminada en 5400</p>
+                <p class="luis-elias-fernndez">Luis Elias Fernández</p>
+              </div>
+              <img
+                class="heroicons-miniellipsis-vertic"
+                alt=""
+                src="public/heroiconsminiellipsisvertical.svg"
+              />
+            </div>
+          </div>
+          <div class="radio-input-container-card1">
+            <input class="input-check2" type="radio" />
+            <div class="card-container">
+              <img class="image-40-icon" alt="" src="public/image-40@2x.png" />
+              <div class="column-container2">
+                <div class="terminada-en-54001">Terminada en 3212</div>
+                <div class="luis-elias-fernndez1">Luis Elias Fernández</div>
+              </div>
+            </div>
+            <img
+              class="heroicons-miniellipsis-vertic"
+              alt=""
+              src="public/heroiconsminiellipsisvertical.svg"
+            />
+          </div>
+          <div class="radio-input-container-card2">
+            <img class="input-check-icon" alt="" src="public/input-check.svg" />
+            <div class="card-container2">
+              <img class="image-40-icon" alt="" src="public/image-40@2x.png" />
+              <div class="column-container2">
+                <div class="terminada-en-54001">Terminada en 3212</div>
+                <div class="luis-elias-fernndez1">Luis Elias Fernández</div>
+              </div>
+            </div>
+            <div class="tag1">
+              <img
+                class="heroicons-outlineexclaimation"
+                alt=""
+                src="public/heroiconsoutlineexclaimationcircle.svg"
+              /><b class="verificar">Verificar</b>
+            </div>
+            <img
+              class="heroicons-miniellipsis-vertic"
+              alt=""
+              src="public/heroiconsminiellipsisvertical.svg"
+            />
+          </div>
+          <button class="button21">
+            <img
+              class="heroicons-miniplus"
+              alt=""
+              src="public/heroiconsminiplus.svg"
+            /><b class="text27">Añadir nueva</b>
+          </button>
+        </div>
+      </div>
+      <div class="row-container4">
+        <button class="button22" id="popupbutton1">
+          <b class="text28">Aceptar</b>
+        </button>
+      </div>
+      <img
+        class="heroicons-minix-mark1"
+        alt=""
+        src="public/heroiconsminixmark.svg"
+        id="popupheroiconsMinixMark"
+      />
+    </div>
+
+    <script>
+      var popupbutton1 = document.getElementById("popupbutton1");
+      if (popupbutton1) {
+        popupbutton1.addEventListener("click", function (e) {
+          var popup = e.currentTarget.parentNode;
+          function isOverlay(node) {
+            return !!(
+              node &&
+              node.classList &&
+              node.classList.contains("popup-overlay")
+            );
+          }
+          while (popup && !isOverlay(popup)) {
+            popup = popup.parentNode;
+          }
+          if (isOverlay(popup)) {
+            popup.style.display = "none";
+          }
+        });
+      }
+      
+      var popupheroiconsMinixMark = document.getElementById(
+        "popupheroiconsMinixMark"
+      );
+      if (popupheroiconsMinixMark) {
+        popupheroiconsMinixMark.addEventListener("click", function (e) {
+          var popup = e.currentTarget.parentNode;
+          function isOverlay(node) {
+            return !!(
+              node &&
+              node.classList &&
+              node.classList.contains("popup-overlay")
+            );
+          }
+          while (popup && !isOverlay(popup)) {
+            popup = popup.parentNode;
+          }
+          if (isOverlay(popup)) {
+            popup.style.display = "none";
+          }
+        });
+      }
+      </script>
+  </body>
+</html>

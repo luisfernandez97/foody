@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <link rel="stylesheet" href="./global.css" />
+    <link rel="stylesheet" href="./modal-address-confirmation.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Source Sans Pro:wght@400;700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Neuron:wght@400;800&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap"
+    />
+  </head>
+  <body>
+    <div class="modal-address-confirmation">
+      <div class="guardar-direccin-parent">
+        <h2 class="guardar-direccin">Guardar dirección</h2>
+        <div class="row-container33">
+          <img class="arrow-icon2" alt="" src="public/arrow2.svg" />
+          <p class="parque-de-la">Parque de la 93, Bogotá, Colombia</p>
+          <button class="btn6"><b class="cambiar6">Cambiar</b></button>
+        </div>
+        <div class="column-container33">
+          <p class="etiqueta">Etiqueta</p>
+          <div class="row-container34">
+            <button class="tag10"><b class="name5">Casa</b></button
+            ><button class="tag11"><div class="name6">Trabajo</div></button
+            ><button class="tag12">
+              <div class="name6">Otro</div>
+              <img
+                class="heroicons-outlinepencil1"
+                alt=""
+                src="public/heroiconsoutlinepencil1.svg"
+              />
+            </button>
+          </div>
+        </div>
+        <div class="column-container33">
+          <p class="etiqueta">Opción de entrega</p>
+          <select class="dropdown1" required></select>
+        </div>
+        <div class="column-container33">
+          <p class="etiqueta">Indicaciones para la entrega (Opcional)</p>
+          <input class="input-text5" type="text" />
+        </div>
+      </div>
+      <div class="row-container35">
+        <button class="button34">
+          <b class="text44">Guardar dirección</b>
+        </button>
+      </div>
+      <img
+        class="heroicons-minix-mark7"
+        alt=""
+        src="public/heroiconsminixmark.svg"
+        id="popupheroiconsMinixMark"
+      />
+    </div>
+
+    <script>
+      var popupheroiconsMinixMark = document.getElementById(
+        "popupheroiconsMinixMark"
+      );
+      if (popupheroiconsMinixMark) {
+        popupheroiconsMinixMark.addEventListener("click", function (e) {
+          var popup = e.currentTarget.parentNode;
+          function isOverlay(node) {
+            return !!(
+              node &&
+              node.classList &&
+              node.classList.contains("popup-overlay")
+            );
+          }
+          while (popup && !isOverlay(popup)) {
+            popup = popup.parentNode;
+          }
+          if (isOverlay(popup)) {
+            popup.style.display = "none";
+          }
+        });
+      }
+      </script>
+  </body>
+</html>
