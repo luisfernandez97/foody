@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <link rel="stylesheet" href="./global.css" />
+    <link rel="stylesheet" href="./modal-confirmation-out.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Source Sans Pro:wght@400;700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Neuron:wght@400;800&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap"
+    />
+  </head>
+  <body>
+    <div class="modalconfirmationout">
+      <div class="ests-tan-cerca-parent">
+        <p class="ests-tan-cerca">¡Estás tan cerca!</p>
+        <p class="seguro-que-quieres">
+          ¿Seguro que quieres perder todo el progreso?
+        </p>
+      </div>
+      <div class="button-group">
+        <button class="button3" id="popupbutton">
+          <b class="text3">Sí, Salir</b></button
+        ><button class="button4" id="popupbutton1">
+          <b class="text4">Volver</b>
+        </button>
+      </div>
+      <img
+        class="heroicons-minix-mark"
+        alt="Cerrar"
+        src="public/heroiconsminixmark.svg"
+        id="popupheroiconsMinixMark"
+      />
+    </div>
+
+    <script>
+      var popupbutton = document.getElementById("popupbutton");
+      if (popupbutton) {
+        popupbutton.addEventListener("click", function (e) {
+          window.location.href = "./registro.html";
+        });
+      }
+      
+      var popupbutton1 = document.getElementById("popupbutton1");
+      if (popupbutton1) {
+        popupbutton1.addEventListener("click", function (e) {
+          var popup = e.currentTarget.parentNode;
+          function isOverlay(node) {
+            return !!(
+              node &&
+              node.classList &&
+              node.classList.contains("popup-overlay")
+            );
+          }
+          while (popup && !isOverlay(popup)) {
+            popup = popup.parentNode;
+          }
+          if (isOverlay(popup)) {
+            popup.style.display = "none";
+          }
+        });
+      }
+      
+      var popupheroiconsMinixMark = document.getElementById(
+        "popupheroiconsMinixMark"
+      );
+      if (popupheroiconsMinixMark) {
+        popupheroiconsMinixMark.addEventListener("click", function (e) {
+          var popup = e.currentTarget.parentNode;
+          function isOverlay(node) {
+            return !!(
+              node &&
+              node.classList &&
+              node.classList.contains("popup-overlay")
+            );
+          }
+          while (popup && !isOverlay(popup)) {
+            popup = popup.parentNode;
+          }
+          if (isOverlay(popup)) {
+            popup.style.display = "none";
+          }
+        });
+      }
+      </script>
+  </body>
+</html>

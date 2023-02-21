@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <link rel="stylesheet" href="./global.css" />
+    <link rel="stylesheet" href="./modal-address-welcome.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Source Sans Pro:wght@400;700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Neuron:wght@400;800&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap"
+    />
+  </head>
+  <body>
+    <div class="modal-address-welcome">
+      <div class="column-container36">
+        <img class="img-icon15" alt="Dirección" src="public/img15@2x.png" />
+        <div class="column-container37">
+          <h2 class="dnde-deseas-recibir">¿Dónde deseas recibir tu pedido?</h2>
+          <p class="ingresa-tu-direccin">
+            Ingresa tu dirección para validar que podemos hacerte la entrega
+          </p>
+        </div>
+      </div>
+      <div class="container6">
+        <button class="input-text7">
+          <img
+            class="heroicons-outlinemap-pin1"
+            alt=""
+            src="public/heroiconsoutlinemappin1.svg"
+          />
+          <p class="text46">Escribe la dirección donde deseas recibir</p>
+        </button>
+      </div>
+      <div class="row-container37">
+        <img class="arrow-icon3" alt="" src="public/arrow3.svg" /><button
+          class="usar-mi-ubicacin"
+        >
+          Usar mi ubicación actual
+        </button>
+      </div>
+      <img
+        class="heroicons-minix-mark9"
+        alt="Cerrar"
+        src="public/heroiconsminixmark.svg"
+        id="popupheroiconsMinixMark"
+      />
+    </div>
+
+    <script>
+      var popupheroiconsMinixMark = document.getElementById(
+        "popupheroiconsMinixMark"
+      );
+      if (popupheroiconsMinixMark) {
+        popupheroiconsMinixMark.addEventListener("click", function (e) {
+          var popup = e.currentTarget.parentNode;
+          function isOverlay(node) {
+            return !!(
+              node &&
+              node.classList &&
+              node.classList.contains("popup-overlay")
+            );
+          }
+          while (popup && !isOverlay(popup)) {
+            popup = popup.parentNode;
+          }
+          if (isOverlay(popup)) {
+            popup.style.display = "none";
+          }
+        });
+      }
+      </script>
+  </body>
+</html>

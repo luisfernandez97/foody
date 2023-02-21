@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <link rel="stylesheet" href="./global.css" />
+    <link rel="stylesheet" href="./modal-product-details.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Source Sans Pro:wght@400;700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Neuron:wght@400;800&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap"
+    />
+  </head>
+  <body>
+    <div class="modal-product-details">
+      <div class="column-container27">
+        <div class="column-container28">
+          <div class="img1">
+            <img class="img-icon13" alt="" src="public/img13@2x.png" />
+            <div class="tag-name-wrapper">
+              <p class="tag-name">Plato del chef</p>
+            </div>
+          </div>
+          <h2 class="pulled-pork-con">Pulled pork con ensalada coleslaw</h2>
+          <p class="p16">$ 17.900</p>
+          <div class="exclusive-price">
+            <p class="precio-exclusivo-para">$ 16.900 precio exclusivo para</p>
+            <button class="url1">
+              <div class="foody-members">Foody Members</div>
+              <img
+                class="heroicons-outlineshopping-car"
+                alt=""
+                src="public/heroiconsminiarrowupright1.svg"
+              />
+            </button>
+          </div>
+        </div>
+        <div class="btn-container1">
+          <button class="button31">
+            <b class="text39">Agregar al carrito</b
+            ><img
+              class="heroicons-outlineshopping-car"
+              alt=""
+              src="public/heroiconsoutlineshoppingcart.svg"
+            />
+          </button>
+        </div>
+      </div>
+      <div class="row-container28">
+        <div class="descripcin-parent">
+          <h3 class="descripcin">Descripción</h3>
+          <p class="deliciosa-y-suave">
+            Deliciosa y suave bondiola de cerdo bañada en salsa BBQ artesanal
+            junto a una suave ensalada de repollo y para finalizar trozos de pan
+            pita de la casa.
+          </p>
+        </div>
+        <div class="column-container29">
+          <h3 class="tabla-nutricional">Tabla nutricional</h3>
+          <div class="nutritional-value">
+            <img
+              class="nutritional-value-child"
+              alt=""
+              src="public/rectangle-4949@2x.png"
+            />
+            <p class="caloras">669.9 Calorías</p>
+          </div>
+          <div class="row-container29">
+            <div class="nutritional-value1">
+              <img
+                class="nutritional-value-child"
+                alt=""
+                src="public/rectangle-49491@2x.png"
+              />
+              <p class="grs-protena">27.9 grs Proteína</p>
+            </div>
+            <div class="nutritional-value1">
+              <img
+                class="nutritional-value-child"
+                alt=""
+                src="public/rectangle-49492@2x.png"
+              />
+              <p class="grs-protena">31.8 grs Grasa</p>
+            </div>
+          </div>
+          <div class="row-container29">
+            <div class="nutritional-value1">
+              <img
+                class="nutritional-value-child"
+                alt=""
+                src="public/rectangle-49493@2x.png"
+              />
+              <p class="grs-protena">67.9 grs Carbs</p>
+            </div>
+            <div class="nutritional-value4">
+              <img
+                class="nutritional-value-child"
+                alt=""
+                src="public/rectangle-49494@2x.png"
+              />
+              <div class="sodio">83.8 Sodio</div>
+            </div>
+          </div>
+        </div>
+        <div class="column-container29">
+          <section class="collapsable">
+            <div class="title9">
+              <h3 class="title10">Ingredientes</h3>
+              <img
+                class="heroicons-outlineshopping-car"
+                alt=""
+                src="public/heroiconsminichevrondown.svg"
+              />
+            </div>
+            <div class="contenido">
+              Pulled pork (Bondiola de cerdo, Salsa BBQ, Vino blanco, Humo
+              líquido, Sal, Pimienta negra), Ensalada (Repollo verde, Repollo
+              morado, Zanahoria, Salsa dulce), Pan pita, Salsa BBQ (Pasta de
+              tomate, Salsa inglesa, Agua, Humo líquido, Azúcar, Vinagre, Fécula
+              de maíz), Salsa dulce (Mayonesa suave, Crema de leche, Zumo de
+              limón, Azúcar blanca, Vinagre blanco, Sal, Pimienta negra).
+            </div>
+          </section>
+          <div class="note">
+            <img
+              class="heroicons-outlineinformation-"
+              alt=""
+              src="public/heroiconsoutlineinformationcircle.svg"
+            />
+            <p class="grs-protena">
+              Contiene: Lácteos, Repollo, Azúcar, Procesado en conjunto con
+              frutos secos.
+            </p>
+          </div>
+        </div>
+      </div>
+      <img
+        class="heroicons-minix-mark4"
+        alt=""
+        src="public/heroiconsminixmark.svg"
+        id="popupheroiconsMinixMark"
+      />
+    </div>
+
+    <script>
+      var popupheroiconsMinixMark = document.getElementById(
+        "popupheroiconsMinixMark"
+      );
+      if (popupheroiconsMinixMark) {
+        popupheroiconsMinixMark.addEventListener("click", function (e) {
+          var popup = e.currentTarget.parentNode;
+          function isOverlay(node) {
+            return !!(
+              node &&
+              node.classList &&
+              node.classList.contains("popup-overlay")
+            );
+          }
+          while (popup && !isOverlay(popup)) {
+            popup = popup.parentNode;
+          }
+          if (isOverlay(popup)) {
+            popup.style.display = "none";
+          }
+        });
+      }
+      </script>
+  </body>
+</html>

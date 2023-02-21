@@ -1,0 +1,58 @@
+body {
+  margin: 0;
+  line-height: normal;
+}
+.heroicons-outlinetrash {
+  position: relative;
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
+  overflow: hidden;
+}
+.text5 {
+  flex: 1;
+  position: relative;
+  line-height: 20px;
+}
+.item {
+  align-self: stretch;
+  background-color: var(--white);
+  border-bottom: 1px solid var(--slate-300);
+  display: flex;
+  flex-direction: row;
+  padding: var(--padding-2xs);
+  align-items: center;
+  gap: var(--gap-xs);
+}
+.dropdown,
+.item,
+.item1 {
+  overflow: hidden;
+  justify-content: flex-start;
+}
+.item1 {
+  align-self: stretch;
+  background-color: var(--white);
+  border-bottom: 1px solid var(--slate-300);
+  display: none;
+  flex-direction: row;
+  padding: var(--padding-2xs);
+  align-items: center;
+}
+.dropdown {
+  position: relative;
+  border-radius: 15px;
+  box-shadow: var(--drop-shadow-lg);
+  border: 1px solid var(--neutral-300);
+  box-sizing: border-box;
+  width: 189px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  max-width: 90%;
+  max-height: 90%;
+  text-align: left;
+  font-size: var(--poppins-bold-text-sm-size);
+  color: var(--neutral-900);
+  font-family: var(--poppins-regular-text-lg);
+}

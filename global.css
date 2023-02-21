@@ -1,0 +1,96 @@
+:root {
+  /* fonts */
+  --poppins-regular-text-lg: Poppins;
+  --source-sans-pro-bold-text-sm: "Source Sans Pro";
+  --font-neuron: Neuron;
+  --font-inter: Inter;
+
+  /* font sizes */
+  --font-size-xs: 8px;
+  --poppins-bold-text-xs-size: 12px;
+  --poppins-bold-text-sm-size: 14px;
+  --poppins-regular-text-base-size: 16px;
+  --poppins-regular-text-lg-size: 18px;
+  --poppins-bold-text-xl-size: 20px;
+  --poppins-bold-text-2xl-size: 24px;
+  --poppins-bold-text-3xl-size: 30px;
+  --poppins-bold-text-4xl-size: 36px;
+
+  /* Colors */
+  --foundation-violet-violet-500: #60269e;
+  --foundation-neutral-neutral-black: #000;
+  --white: #fff;
+  --neutral-200: #e5e5e5;
+  --neutral-50: #fafafa;
+  --neutral-800: #262626;
+  --gray-900: #111827;
+  --neutral-900: #171717;
+  --gray-300: #d2d5da;
+  --neutral-300: #d4d4d4;
+  --slate-300: #cbd5e1;
+  --neutral-40: #cbd4e1;
+  --red-500: #ef4444;
+  --red-600: #dc2626;
+  --foundation-pear-pear-500: #d2de30;
+  --foundation-olive-olive-500: #9ccb3b;
+  --foundation-olive-olive-700: #6f902a;
+  --foundation-magenta-magenta-500: #8e3694;
+  --foundation-violet-violet-50: #efe9f5;
+  --foundation-pear-pear-50: #fbfcea;
+  --foundation-violet-violet-300: #946ebe;
+  --foundation-violet-violet-400: #8051b1;
+  --neutral-100: #f5f5f5;
+  --neutral-500: #737373;
+  --neutral-600: #525252;
+  --foundation-pear-pear-200: #eaf0a0;
+  --foundation-pear-pear-300: #e1e974;
+  --foundation-violet-violet-900: #281042;
+  --neutral-700: #404040;
+  --color-plum-100: #d0a6fe;
+  --foundation-violet-violet-200: #b69bd2;
+
+  /* Gaps */
+  --gap-3xs: 4px;
+  --gap-2xs: 6px;
+  --gap-xs: 8px;
+  --gap-sm: 10px;
+  --gap-md: 12px;
+  --gap-lg: 16px;
+  --gap-xl: 24px;
+  --gap-2xl: 32px;
+
+  /* Paddings */
+  --padding-5xs: 8px;
+  --padding-4xs: 10px;
+  --padding-3xs: 11px;
+  --padding-2xs: 12px;
+  --padding-xs: 14px;
+  --padding-sm: 16px;
+  --padding-md: 20px;
+  --padding-lg: 24px;
+  --padding-xl: 32px;
+  --padding-2xl: 40px;
+  --padding-3xl: 48px;
+  --padding-4xl: 100px;
+
+  /* border radiuses */
+  --br-3xs: 4px;
+  --br-2xs: 6px;
+  --br-xs: 8px;
+  --br-sm: 16px;
+  --br-md: 24px;
+  --br-lg: 32px;
+  --br-xl: 104px;
+  --br-2xl: 160px;
+  --br-3xl: 360px;
+
+  /* Effects */
+  --drop-shadow-lg: 0px 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0px 4px 6px -2px rgba(0, 0, 0, 0.05);
+  --drop-shadow-xl: 0px 20px 25px -5px rgba(0, 0, 0, 0.1),
+    0px 10px 10px -5px rgba(0, 0, 0, 0.04);
+  --branding-green-shade: 10px 10px 0px -2px #bfca2c;
+  --branding-purple-shade: 10px 10px 0px -2px #60269e;
+  --drop-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.06);
+  --drop-shadow-sm: 0px 1px 2px rgba(0, 0, 0, 0.05);
+}

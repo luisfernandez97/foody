@@ -1,0 +1,113 @@
+body {
+  margin: 0;
+  line-height: normal;
+}
+.popup-overlay {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+.img-icon14 {
+  position: relative;
+  width: 159.48px;
+  height: 128px;
+  flex-shrink: 0;
+  object-fit: cover;
+}
+.direccin-aadida-con,
+.empieza-a-ordenar {
+  margin: 0;
+  align-self: stretch;
+  position: relative;
+}
+.direccin-aadida-con {
+  font-size: inherit;
+  line-height: 32px;
+  font-weight: 700;
+  font-family: inherit;
+}
+.empieza-a-ordenar {
+  font-size: var(--poppins-regular-text-base-size);
+  line-height: 24px;
+}
+.column-container31,
+.column-container32 {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.column-container31 {
+  padding: var(--padding-sm) var(--padding-lg) var(--padding-xl);
+  align-items: center;
+  justify-content: center;
+  gap: var(--gap-xl);
+  z-index: 0;
+}
+.text40 {
+  position: relative;
+  font-size: var(--poppins-regular-text-base-size);
+  line-height: 24px;
+  font-family: var(--poppins-regular-text-lg);
+  color: var(--white);
+  text-align: left;
+}
+.button32,
+.row-container31 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.button32 {
+  cursor: pointer;
+  border: 0;
+  padding: var(--padding-xs) var(--padding-lg);
+  background-color: var(--foundation-violet-violet-500);
+  flex: 1;
+  border-radius: var(--br-3xl);
+  overflow: hidden;
+}
+.row-container31 {
+  align-self: stretch;
+  border-top: 1px solid var(--neutral-300);
+  padding: var(--padding-lg);
+  z-index: 1;
+}
+.heroicons-minix-mark5 {
+  position: absolute;
+  margin: 0 !important;
+  top: 16px;
+  right: 24px;
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+  overflow: hidden;
+  z-index: 2;
+}
+.modal-address-sucess {
+  position: relative;
+  border-radius: var(--br-lg);
+  background-color: var(--white);
+  box-shadow: var(--drop-shadow-lg);
+  border: 1px solid var(--white);
+  box-sizing: border-box;
+  width: 500px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  padding: var(--padding-xl) 0 0;
+  align-items: center;
+  justify-content: flex-start;
+  max-width: 90%;
+  max-height: 90%;
+  text-align: center;
+  font-size: var(--poppins-bold-text-2xl-size);
+  color: var(--foundation-neutral-neutral-black);
+  font-family: var(--poppins-regular-text-lg);
+}
